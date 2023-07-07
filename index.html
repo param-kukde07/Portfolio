@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-eqciv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Param Kukde</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/631439d038.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img id = "bScreen" src="background.png"> -->
+                <!-- <img id = "mScreen" src="phone-background.png"> -->
+    
+                <img src="param.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+                    </ul>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+            </nav>
+        <div class="header-text">
+        <h1>Hi, I'm <span>Param Kukde</span><br>From Wardha, Maharashatra</h1>
+        <p>IT Engineer</p>
+    </div>
+   </div> 
+</div>
+
+<!-------about------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am a third-year Information Technology student at Mumbai
+                    University with a passion for photography and technology. I am
+                    always eager to learn new things and am always looking for new
+                    ways to apply my skills. In my spare time, I enjoy playing cricket
+                    and exploring new technologies. <br />I am a highly motivated and
+                    results-oriented individual with strong problem-solving and
+                    analytical skills. I am also a team player and have excellent
+                    communication skills. I am confident that I have the skills and
+                    experience necessary to be successful in a career in Information
+                    Technology.
+                  </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links "onclick="opentab('Education')">Education</p>
+                    <p class="tab-links "onclick="opentab('Experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Python</span><br></li>
+                        <!-- <li><span>C Programming</span><br></li> -->
+                        <li><span>C++ Programming</span><br></li>
+                        <li><span>HTML</span><br></li>
+                        <li><span>CSS</span><br></li>
+                        <li><span>Photography</span><br></li>
+                        <li><span>Canva</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021-Current </span><br>BE(IT) from Mumbai University</li>
+                        <li><span>2021</span><br>HSC from State Board of Maharashatra</li>
+                        <li><span>2019</span><br>SSC from Central Board of Secondary Education</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Event Management</span><br>Volunter at PetFed(2023).</li>
+                        <li><span>Photography</span><br>Core of photography club VCC.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------portfolio------------------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <!-- <input type="checkbox" id="btnBox"> -->
+        <div class="work-list">
+            <div class="work">
+                <img src="cricket.png">
+            </div>
+            <div class="work">
+                <img src="dog.jpg">
+            </div>
+            <div class="work">
+                <img src="nature.jpg">
+            </div>
+            <div class="work">
+                <img src="wada.jpg">
+            </div>
+            <div class="work">
+                <img src="pet.jpg">
+            </div>
+            <div class="work">
+                <img src="camel.jpg">
+            </div>
+            <div class="work">
+                <img src="police.jpg">
+            </div>
+            <div class="work">
+                <img src="temple2.jpg">
+            </div>
+            <div class="work">
+                <img src="wardha.jpg">
+            </div>
+            <div class="work">
+                <img src="goat.jpg">
+            </div>
+            <div class="work">
+                <img src="landscape.jpg">
+            </div>
+            <div class="work">
+                <img src="gtemple.jpg">
+            </div>
+            <!-- <label for="btnBox" class="btn-area">
+                <span class="btn1">See More</span>
+                <span class="btn2">See Less</span>
+            </label> -->
+            <var></var>
+        </div>
+    </div>
+</div>
+
+<!-----------Contact----------->
+<div id="contact">
+    <div class="container"> 
+        <div class="row">
+            <div class="contact-left">
+                <h1 class=""sub-title>Contact Me</h1>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> paramkukde2@gmail.com</p>
+                <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 9028516056</p>
+                <div class="social-icons">
+                    <a href=" https://www.linkedin.com/in/param-kukde"><i class='fa fa-linkedin'></i> </a>
+                    <a href="https://github.com/param-kukde07"><i class="fa fa-github"></i> </a>
+                    <a href="https://twitter.com/ParamKukde"><i class="fa fa-twitter"></i> </a>
+                    <a href="https://instagram.com/32mp_shades"><i class="fa fa-instagram"></i> </a>
+                    <a href="https://wa.me/qr/UGIHI4Y3DJT5M1"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <!-- <a href="images/my-cv.pdf" class="btn btn2">Download CV</a> -->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+     <div class="copyright">
+        <p>Copyright © Param <i class="fa fa-heart" aria-hidden="true"></i><br> Made by Param Kukde.</p>
+     </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxXVuOBYf9pyXFCirLnmSYEu_Ze2Dvy90ufQglHxUseSAiTKp_bPiVDq1a8AQEGolbQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Messange sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html
