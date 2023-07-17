@@ -8,9 +8,11 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #000000;
+    background: #000;
     color: #fff;
 }
+
+
 #header{
     width: 100%;
     height: 100vh;
@@ -28,15 +30,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 
 #header img{
-    position: absolute;
-    width: 120px;
-    left: 0;
+    position: relative;
+    width: 110px;
+    left: 10px;
     height: auto;
-    z-index:0;
+    z-index: 0;
 }
 
 #mScreen{
@@ -48,6 +50,7 @@ nav {
     width: 140px;
 }
 
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -57,7 +60,7 @@ nav ul li{
 nav ul li a{
     color:#fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     position: relative;
 }
 
@@ -73,7 +76,6 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width:100%;
-
 }
 
 .header-text{
@@ -91,9 +93,32 @@ nav ul li a:hover::after{
     color: #f62fa9;
 }
 
+
+
+/* ------------------------------reading indicator-------------------------------- */
+/* .progress {
+    height: 10px;
+    background: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.progress-highlight {
+    transition: width 0.15s linear;
+    background: #03c4a1;
+    height: 100%;
+    width: 100%;
+
+} */
+  
+/* ----------------------------------------------------------------- */
+
 /*-------about--------*/
 #about{
-    padding: 80px 0;
+    padding: 0;
     color: #ababab
 }
 
@@ -120,7 +145,14 @@ nav ul li a:hover::after{
     font-size: 45px;
     font-weight: 600;
     color: #fff;
+}
 
+.sub-title2{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(25, 25, 60);
+    background: #ababab;
+    
 }
 
 .tab-titles{
@@ -128,7 +160,7 @@ nav ul li a:hover::after{
     margin: 20px 0 40px;
 }
 
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
@@ -136,7 +168,7 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.tab-links::after{
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -146,8 +178,8 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
-    width: 50%;
+.tab-links.active-link::after {
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -232,8 +264,29 @@ nav ul li a:hover::after{
     display: none;
 } */
 
+
 #portfolio {
     padding: 50px 0;
+}
+
+.project-icons{
+    margin-top: 30px;
+    position: relative;
+    /* left: 470px; */
+}
+
+.project-icons a{
+    text-decoration: none;
+    font-size: 80px;
+    margin-right: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.project-icons a:hover{
+    color: orange;
+    transform: translateY(-5px);
 }
 
 .work-list {
@@ -260,6 +313,8 @@ nav ul li a:hover::after{
 .work:hover img {
     transform: scale(1.1);
 }
+
+
 
 
 /*-----------------contact---------------*/
@@ -296,13 +351,12 @@ nav ul li a:hover::after{
 .social-icons a:hover{
     color:#ff004f;
     transform: translateY(-5px);
-
 }
 
 .btn.btn2{
     display: inline-block;
     background: #ff004f;
-    border-radius: 8px;
+    border-radius: 30px;
 }
 
 .contact-right form{
@@ -332,8 +386,51 @@ form .btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
+    border-width: 4px;
     cursor: pointer;
 }
+
+.btn2:hover{
+    background: #ff004f;
+    border-radius: 30px;
+    /* box-shadow: 0 0 30px #f62fa9; */
+    box-shadow: 0 0 35px gold;
+    /* transform: translateY(-8px); */
+}
+
+
+/* ----------------------------------------scroll back to top-------------------------------------- */
+#back-top.scroll-btn-visible {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#back-top {
+    position: fixed;
+    z-index: 10;
+    right: 20px;
+    bottom: 20px;
+    display: block;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    scroll-behavior: smooth;
+}
+.scroll-btn a {
+    font-size: 40px;
+    color: rgb(67, 67, 67);
+    background-color: transparent;
+    transition: transform 0.4s;  
+}
+
+.scroll-btn a:hover{
+    color:#ff004f;
+    border-radius: 100%;
+    box-shadow: 0 0 50px #ff004f;
+    transform: translateY(-8px);
+}
+
+
 
 .copyright{
     width: 100%;
@@ -345,7 +442,7 @@ form .btn2{
 }
 
 .copyright i{
-    color: #ff004f;
+    color: red  ;
 }
 
 /*----------css for small screen----------*/
