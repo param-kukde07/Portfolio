@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
 html{
@@ -13,10 +14,11 @@ body{
 }
 
 
+
 #header{
-    width: min(100%, 1600px);
+    width: min(110%, 1465px);
     height: 100vh;
-    background-image: url("background-removebg.png");
+    background-image: url("images/background-removebg.png");
     background-size: cover;
     background-position: center;
 }
@@ -43,9 +45,8 @@ nav {
 
 
 
-
 .logo{
-    width: 140px ;
+    width: 140px;
 }
 
 
@@ -79,7 +80,6 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 30%;
     font-size: 30px;
-
 }
 
 .header-text h1{
@@ -147,7 +147,7 @@ nav ul li a:hover::after{
 
 .sub-title2{
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
     color: rgb(25, 25, 60);
     background: #ababab;
     
@@ -186,7 +186,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #b54769;
+    color: #bc2b59;
     font-size: 14px;
 }
 
@@ -285,6 +285,19 @@ nav ul li a:hover::after{
 .project-icons a:hover{
     transform: translateY(-5px);
 }
+
+
+.scroll{
+    display: block;
+    border: 5px solid white;
+    padding: 25px;
+    padding-top: 0px;
+    margin-top: 25px;
+    width: min(1600px, 100%);
+    height: 650px;
+    overflow-y: scroll;
+}
+
 
 .work-list {
     display: grid;
@@ -467,7 +480,8 @@ nav .fa{
 @media only screen and (max-width: 460px){
     
     #header{
-        background-image: url("phone.png");
+        /* width: min(110%, 460px); */
+        background-image: url("images/phone.png");
         background-size: cover;
         background-position: center;
         background-color: transparent;
@@ -484,7 +498,7 @@ nav .fa{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #be325e;
         position: fixed;
         top: 0;
         right: -200px;
@@ -534,7 +548,7 @@ nav .fa{
     display: block;
 }
 
-/* Base styles */
+/* Image for small screen */
 img {
     max-width: 100%;
     height: auto;
