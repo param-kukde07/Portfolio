@@ -1,4 +1,5 @@
 # Personal Portfolio Website - Param Kukde
+https://portfolio-paramkukde.netlify.app/
 
 This repository contains the code for Param Kukde's personal portfolio website. The website showcases my skills, projects, and contact information.
 
@@ -54,7 +55,3 @@ If you have any questions or feedback regarding this portfolio website, feel fre
 - Instagram: [@param_kukde](https://www.instagram.com/param_kukde)
 - WhatsApp: [WhatsApp Me](https://wa.me/qr/UGIHI4Y3DJT5M1)
 - Photography Instagram: [@32mp_shades](https://www.instagram.com/32mp_shades)
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as per the terms of the license.
