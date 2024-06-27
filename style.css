@@ -96,7 +96,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: #ff004f;
+    background: #00c8ff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -200,7 +200,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background:  #00c8ff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -217,7 +217,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #bc2b59;
+    color:  #00c8ff;
     font-size: 14px;
 }
 
@@ -376,7 +376,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color:#ff004f;
+    color: #00c8ff;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -394,7 +394,7 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color:#ff004f;
+    color: yellow;
     transform: translateY(-5px);
 }
 .btn.btn4{
